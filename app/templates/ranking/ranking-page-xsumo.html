@@ -1,0 +1,34 @@
+{% import "innokas-util.html" as iu %}
+{% extends "orig/ranking/ranking-page.html" %}
+
+{% block header %}
+	<div class="innokas-ranking-header innokas-xsumo">
+		{{ iu.laji_icon("xsumo-logo.svg", "innokas-laji-icon-big") }}
+		<div>
+			<h1>Sijoitukset / XSumo</h1>
+			<hr class="innokas-hr"/>
+			{% if id.startswith("xs.as1") %}
+				<div>Alkusarja 1: {{iu.ranking_blocks("xs.as1.%d", 8)}}</div>
+			{% elif id.startswith("xs.as2") %}
+				<div>Alkusarja 2: {{iu.ranking_blocks("xs.as2.%d", 4)}}</div>
+			{% elif id.startswith("xs.ss") %}
+				<div>Alkusarja 3: {{iu.ranking_blocks("xs.ss.%d", 3)}}</div>
+			{% elif id.startswith("xs.js") %}
+				<div>Jatkosarja: {{iu.ranking_blocks("xs.js.%d", 2)}}</div>
+			{% elif id.startswith("xs.semi") %}
+				<div>Semifinaali: {{iu.ranking_blocks("xs.semi.%d", 2)}}</div>
+			{% elif id == "xs.pronssi" or id == "xs.final" %}
+				<div>Loppuottelut:
+					<div>
+						{{ iu.ranking_block("xs.final", "Finaali") }}
+						{{ iu.ranking_block("xs.pronssi", "Pronssi") }}
+					</div>
+				</div>
+			{% endif %}
+		</div>
+	</div>
+
+	{{ super() }}
+{% endblock %}
+
+{# vim: set ft=htmldjango: #}

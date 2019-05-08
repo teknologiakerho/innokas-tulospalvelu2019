@@ -1,0 +1,14 @@
+{% extends "orig/ranking/base.html" %}
+
+{% block css %}
+	{{ super() }}
+	{% include "innokas-style.html" %}
+{% endblock %}
+
+{% block body_content %}
+	{% include "innokas-header.html" %}
+	{{ super() }}
+	{% include "innokas-footer.html" %}
+{% endblock %}
+
+{# vim: set ft=htmldjango: #}

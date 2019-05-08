@@ -1,0 +1,77 @@
+{% extends "orig/timetable/search.html" %}
+
+{% block css %}
+	{{ super() }}
+	{% include "innokas-style.html" %}
+{% endblock %}
+
+{% block body_content %}
+	{% include "innokas-header.html" %}
+	{{ super() }}
+	{% include "innokas-footer.html" %}
+{% endblock %}
+
+{% macro b(id, text) %}
+	<div class="innokas-block-input">
+		<label class="t-label" for="b{{id}}">{{text}}</label>
+		<input type="checkbox" name="b" value="{{id}}" id="b{{id}}" />
+	</div>
+{% endmacro %}
+
+{% macro bs(id_template, num) %}
+	{% for i in range(1, num+1) %}
+		{{b(id_template%i, i)}}
+	{% endfor %}
+{% endmacro %}
+
+{% block blocks %}
+	<div class="t-search-section">
+		<div class="t-search-header">
+			Lohkot (XSumo)
+		</div>
+		<div class="t-search-content">
+			<table>
+				<tr>
+					<td>Alkusarja 1</td>
+					<td>{{bs("xs.as1.%d", 8)}}</td>
+				</tr>
+				<tr>
+					<td>Alkusarja 2</td>
+					<td>{{bs("xs.as2.%d", 4)}}</td>
+				</tr>
+				<tr>
+					<td>Alkusarja 3</td>
+					<td>{{bs("xs.ss.%d", 4)}}</td>
+				</tr>
+				<tr>
+					<td>Jatkosraja</td>
+					<td>{{bs("xs.as.%d", 2)}}</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div class="t-search-section">
+		<div class="t-search-header">
+			Lohkot (Rescue)
+		</div>
+		<div class="t-search-content">
+			<table>
+				<tr>
+					<td>Rescue 1</td>
+					<td>{{bs("rescue1.%d", 2)}}</td>
+				</tr>
+				<tr>
+					<td>Rescue 2</td>
+					<td>{{bs("rescue2.%d", 2)}}</td>
+				</tr>
+				<tr>
+					<td>Rescue 3</td>
+					<td>{{bs("rescue3.%d", 2)}}</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+{% endblock %}
+
+{# vim: set ft=htmldjango: #}

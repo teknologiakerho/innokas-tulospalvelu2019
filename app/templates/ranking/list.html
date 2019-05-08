@@ -1,0 +1,91 @@
+{% import "innokas-util.html" as iu %}
+{% extends "ranking/base.html" %}
+
+{% macro item(name, blocks) %}
+	<tr>
+		<td class="innokas-ranking-list-name">
+			{{name}}
+		</td>
+		<td class="innokas-ranking-list-blocks">
+			{{blocks|safe}}
+		</td>
+	</tr>
+{% endmacro %}
+
+{% block body %}
+	<div class="container innokas-ranking-info">
+
+		<div class="innokas-subpage-header">
+			<i class="fas fa-list-ol"></i> Sijoitukset
+		</div>
+
+		<hr class="innokas-hr" />
+
+		<div class="innokas-subpage-info">
+			Tietoa sarjojen rakenteesta:
+			<a href="/sarjat.html" target="_blank">
+				apua miten sarjat toimii???
+			</a>
+
+			<hr class="innokas-hr" />
+			<i class="text-meta">
+				Huomaathan, että vain sumon ja rescuen pisteet päivitetään tälle sivulle.
+				Muiden sarjojen sijoitukset julkaistaan vasta kisojen lopuksi. 
+			</i>
+		</div>
+
+	</div>
+
+	<div class="container innokas-ranking-list-sections">
+
+		<div class="innokas-ranking-list-section">
+			<div class="innokas-ranking-list-header">
+				{{ iu.laji_icon("xsumo-logo.svg") }}
+				XSumo
+			</div>
+
+			<hr class="innokas-hr" />
+
+			<i class="text-meta">Pääsarja</i>
+
+			<table class="innokas-ranking-list">
+				{{ item("Alkusarja 1:", iu.ranking_blocks("xs.as1.%d", 8)) }}
+				{{ item("Alkusarja 2:", iu.ranking_blocks("xs.as2.%d", 4)) }}
+				{{ item("Jatkosarja:", iu.ranking_blocks("xs.js.%d", 2)) }}
+				{{ item("Semifinaali:", iu.ranking_blocks("xs.semi.%d", 2)) }}
+				{{ item("Loppuottelut:", 
+					iu.ranking_block("xs.final", "Finaali")
+					+ iu.ranking_block("xs.pronssi", "Pronssi")
+				) }}
+			</table>
+
+			<hr class="innokas-hr" />
+
+			<i class="text-meta">Alempi sarja</i>
+
+			<table class="innokas-ranking-list">
+				{{ item("Alkusarja 3:", iu.ranking_blocks("xs.ss.%d", 3)) }}
+			</table>
+		</div>
+
+		<div class="innokas-ranking-list-section">
+			<div class="innokas-ranking-list-header">
+				{{ iu.laji_icon("rescue-logo.svg") }}
+				Rescue
+			</div>
+
+			<hr class="innokas-hr" />
+
+			<i class="text-meta">Sijoitukset</i>
+
+			<table class="innokas-ranking-list">
+				{{ item("Rescue 1:", iu.ranking_block("rescue1", "Rescue 1")) }}
+				{{ item("Rescue 2:", iu.ranking_block("rescue2", "Rescue 2")) }}
+				{{ item("Rescue 3:", iu.ranking_block("rescue3", "Rescue 3")) }}
+			</table>
+		</div>
+
+	</div>
+{% endblock %}
+
+{# vim: set ft=htmldjango: #}

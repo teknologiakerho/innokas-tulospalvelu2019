@@ -1,0 +1,24 @@
+{% import "innokas-util.html" as iu %}
+{% extends "orig/ranking/ranking-page.html" %}
+
+{% block header %}
+	<div class="innokas-ranking-header innokas-rescue">
+		{{ iu.laji_icon("rescue-logo.svg", "innokas-laji-icon-big") }}
+		<div>
+			<h1>Sijoitukset / Rescue</h1>
+			<hr class="innokas-hr"/>
+			<div>
+				Taso:
+				<div>
+					{{ iu.ranking_block("rescue1", "Rescue 1") }}
+					{{ iu.ranking_block("rescue2", "Rescue 2") }}
+					{{ iu.ranking_block("rescue3", "Rescue 3") }}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{{ super() }}
+{% endblock %}
+
+{# vim: set ft=htmldjango: #}

@@ -1,0 +1,27 @@
+{% import "util.html" as u %}
+
+{% macro laji_icon(svg, class="innokas-laji-icon") %}
+	<img src="{{url_for('public.static', filename=svg)}}" class="{{class}}" />
+{% endmacro %}
+
+{% macro ranking_blocks(id_template, num) %}
+	<div class="innokas-blocks">
+		{{ ranking_block_list(id_template, num) }}
+	</div>
+{% endmacro %}
+
+{% macro ranking_block_list(id_template, num) %}
+	{% for i in range(1, num+1) %}
+		{{ ranking_block(id_template%i, i) }}
+	{% endfor %}
+{% endmacro %}
+
+{% macro ranking_block(id, text) %}
+	{% set path=url_for('ranking.ranking', id=id) %}
+	<a class="innokas-block {% call u.active_path(path) %}innokas-block-active{% endcall %}"
+	   href="{{path}}">
+		{{text}}
+	</a>
+{% endmacro %}
+
+{# vim: set ft=htmldjango: #}

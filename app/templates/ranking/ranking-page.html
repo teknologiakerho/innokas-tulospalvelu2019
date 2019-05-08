@@ -1,0 +1,11 @@
+{# Joo tää on vähän hasardi viritelmä mutta ainakin se toimii #}
+
+{% if id.startswith("r") %}
+	{% extends "ranking/ranking-page-rescue.html" %}
+{% elif id.startswith("xs") %}
+	{% extends "ranking/ranking-page-xsumo.html" %}
+{% else %}
+	{% extends "orig/ranking/ranking-page.html" %}
+{% endif %}
+
+{# vim: set ft=htmldjango: #}

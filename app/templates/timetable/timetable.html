@@ -1,0 +1,48 @@
+{% extends "orig/timetable/timetable.html" %}
+
+{% block css %}
+	{{ super() }}
+	{% include "innokas-style.html" %}
+{% endblock %}
+
+{% block body_content %}
+	{% include "innokas-header.html" %}
+
+	<div class="container innokas-timetable-info">
+		<div class="innokas-subpage-header">
+			<i class="fas fa-clock"></i> Suoritusaikataulu
+		</div>
+		<hr class="innokas-hr" />
+		<div class="innokas-subpage-info">
+			<a href="{{url_for('timetable.search')}}">
+				<i class="fas fa-search"></i>
+				Hae aikatauluja
+			</a>
+			|
+			<a href="/timetable.html">
+				<i class="fas fa-list"></i>
+				Yleinen aikataulu
+			</a>
+			<hr class="innokas-hr" />
+			Päiväkohtaiset aikataulut: 
+			<a href="{{url_for('timetable.index', day="15.5.2019")}}">
+				Ensimmäinen päivä
+			</a>
+			|
+			<a href="{{url_for('timetable.index', day="16.5.2019")}}">
+				Toinen päivä
+			</a>
+			<hr class="innokas-hr" />
+			<i class="text-meta">Huomaathan, että aikataulut päivittyvät sitä mukaan, kun jatkoon
+				pääsevät joukkueet varmistuvat.<br/> Lohkojen yleiset ajat
+				löydät "Yleinen aikataulu"-linkistä
+			</i>
+		</div>
+	</div>
+
+	{{ super() }}
+
+	{% include "innokas-footer.html" %}
+{% endblock %}
+
+{# vim: set ft=htmldjango: #}

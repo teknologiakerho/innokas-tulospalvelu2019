@@ -1,0 +1,232 @@
+.innokas {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.innokas-bg {
+	/* Tämä väri on maailmankuulu, huippuartistien kehitystyön tulos: "Innokkaan vihreä".
+	 * Älkää kertoko innokkaille, että varastin sen niiden sivuilta */
+	background: #007e21;
+	color: #fff;
+}
+
+.innokas-hr {
+	background: #aaa;
+	border: none;
+	height: 1px;
+	width: 100%;
+}
+
+.innokas-header {
+	display: flex;
+	padding: 8px;
+	white-space: nowrap;
+	flex-wrap: wrap;
+}
+
+.innokas-header > .innokas-logo {
+	min-width: 20%;
+	padding-right: 20px;
+	font-weight: bold;
+}
+
+.innokas-footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	/*
+	background: #424242;
+	color: #fafafa;
+	*/
+
+	/* border-top: 2px solid #007e21; */
+	border-top: 1px solid #333;
+	padding: 8px;
+}
+
+.innokas-footer-social {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin: auto;
+	/* font-size: 1.2em; */
+}
+
+.innokas-footer-social-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: auto 0;
+}
+
+.innokas-footer-social i {
+	font-size: 1.5em;
+	margin-right: 0.5em;
+}
+
+.innokas-footer-github {
+	/* "Githubin musta" */
+	color: #171515 !important;
+}
+
+.innokas-footer-twitch {
+	/* "Twitchin violetti" */
+	color: #6441A4 !important;
+}
+
+.innokas-footer-twitter {
+	/* "Twitterin sininen" */
+	color: #00aced !important;
+}
+
+.innokas-footer-links {
+	margin: auto;
+	display: flex;
+	padding: 1em;
+}
+
+.innokas-footer-logo {
+	display: block;
+	height: 3em;
+	margin: 0 1em;
+}
+
+.innokas-footer-logo > img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.innokas-footer-innokas {
+	padding: 8px;
+	box-sizing: border-box;
+	background: #007e21;
+}
+
+.innokas-navi > a {
+	color: #fff !important;
+	padding: 0 20px;
+}
+
+.innokas-navi-active {
+	border-bottom: 2px solid #FF9800;
+}
+
+.innokas-laji-icon {
+	width: 2em;
+	height: 2em;
+}
+
+.innokas-laji-icon-med {
+	width: 4em;
+	height: 4em;
+}
+
+.innokas-laji-icon-big {
+	width: 8em;
+	height: 8em;
+}
+
+.innokas-block {
+	min-width: 1.8em;
+	padding: 0 0.2em;
+	line-height: 2em;
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #777;
+	color: #333 !important;
+	white-space: nowrap;
+}
+
+.innokas-block-active {
+	background: #333 !important;
+	color: #fff !important;
+}
+
+.innokas-ranking-info {
+	text-align: center;
+}
+
+.innokas-ranking-list-sections {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.innokas-ranking-list-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 20px;
+}
+
+.innokas-ranking-list {
+	border-collapse: separate;
+	border-spacing: 4px;
+
+	align-self: flex-start;
+
+	font-size: 0.9em;
+}
+
+.innokas-ranking-list-divider > td {
+	border-top: 1px solid #aaa;
+}
+
+.innokas-ranking-list-header {
+	display: flex;
+	align-items: center;
+
+	font-size: 2em;
+	font-weight: normal;
+}
+
+.innokas-ranking-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin: 2em;
+}
+
+/*
+.innokas-ranking-header.innokas-rescue a {
+	color: #0f87a9 !important;
+}
+
+.innokas-ranking-header.innokas-xsumo a {
+	color: #d33f27 !important;
+}
+*/
+
+.innokas-timetable-info {
+	text-align: center;
+}
+
+.innokas-subpage-header {
+	font-size: 3em;
+}
+
+.innokas-subpage-info {
+	font-size: 0.9em;
+}
+
+.innokas-block-input {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+	margin: 0 14px;
+}
+
+.innokas-block-input > input {
+	width: 20px;
+	height: 20px;
+}
+
+.innokas-block-input > label {
+	padding: 0 !important;
+}

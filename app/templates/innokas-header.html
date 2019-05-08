@@ -1,0 +1,31 @@
+{# Robostatin util.html #}
+{% import "util.html" as u %}
+
+{% macro navi_link(href) %}
+	<a href="{{href}}"
+	   {% call u.active_path(href) %}class="innokas-navi-active"{% endcall %}>
+	   {{ caller() }}
+	</a>
+{% endmacro %}
+
+<div class="innokas innokas-bg innokas-header">
+
+	<div class="innokas-logo">
+		Innokas 2019 | Robotiikkatapahtuma
+	</div>
+
+	<div class="innokas-navi">
+		<a href="/">
+			Etusivu
+		</a>
+		{% call navi_link("/timetable") %}
+			Aikataulu
+		{% endcall %}
+		{% call navi_link("/ranking") %}
+			Sijoitukset
+		{% endcall %}
+	</div>
+
+</div>
+
+{# vim: set ft=htmldjango: #}
