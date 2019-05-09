@@ -1,0 +1,37 @@
+body {
+	font-size: 2vw;
+	background: #efefef;
+	color: #333;
+	margin: 0;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent;
+}
+
+#carousel {
+	min-width: 100vw;
+	min-height: 100vh;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#carousel > * {
+	width: 80vw;
+}
+
+#timetable {
+	font-size: 3vmin;
+}
+
+/* Fontit */
+body {
+	font-family: 'Nunito', sans-serif;
+}
+
+.live-header {
+	font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
