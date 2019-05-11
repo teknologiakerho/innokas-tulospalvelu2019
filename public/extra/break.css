@@ -1,0 +1,117 @@
+body {
+	font-size: 2vmin;
+	color: #333;
+	/* background: #f1f1f1; */
+	background: #fff;
+	margin: 0;
+
+	font-family: 'Nunito', sans-serif;
+}
+
+#container {
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	padding: 1em;
+	box-sizing: border-box;
+}
+
+#header {
+	font-size: 2em;
+	padding-bottom: 2em;
+	/* color: #F44336; */
+	margin-top: auto;
+}
+
+#main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#main > * {
+	padding: 0 1em;
+	box-sizing: border-box;
+	width: 40vw;
+}
+
+#main-timetable {
+	border-right: 1px solid #777;
+}
+
+.red-header {
+	text-transform: uppercase;
+	text-align: center;
+	color: #F44336;
+}
+
+#timetable {
+	padding-top: 1em;
+	font-size: 1.2em;
+}
+
+#main-info {
+	align-self: flex-start;
+}
+
+#clock {
+	font-size: 4em;
+}
+
+.explanation {
+	color: #666;
+}
+
+#main-some {
+	padding: 0;
+	margin: 0;
+
+	padding-top: 1em;
+	list-style-type: none;
+	font-weight: bold;
+}
+
+#footer {
+	margin-top: auto;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#footer img {
+	width: 200px;
+}
+
+#footer > * {
+	margin: 0 1em;
+}
+
+#footer-innokas {
+	background: #007e21;
+	padding: 10px 20px;
+}
+
+/* XXX */
+.live-timetable-event-container {
+	min-height: unset !important;
+}
+
+.live-timetable-time {
+	font-size: 1.2em !important;
+}
+
+.live-timetable-event-arena {
+	display: none !important;
+}
+/*
+.live-timetable tr:not(:last-child) {
+	border-bottom: 1px solid #555 !important;
+}
+
+*/
