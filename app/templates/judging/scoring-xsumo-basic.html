@@ -1,0 +1,17 @@
+{% extends "orig/judging/scoring-xsumo-basic.html" %}
+
+{% block form %}
+	{% if should_send_scores(judging) %}
+		{{ fantsu.inject_component()|safe }}
+	{% endif %}
+	{{ super() }}
+{% endblock %}
+
+{% block js %}
+	{% if should_send_scores(judging) %}
+		{{ fantsu.inject_scripts("fantsu.xsumo", judging.event.id)|safe }}
+	{% endif %}
+	{{ super() }}
+{% endblock %}
+
+{# vim: set ft=htmldjango: #}

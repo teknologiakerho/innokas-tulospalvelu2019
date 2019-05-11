@@ -2,6 +2,7 @@ import os
 import logging
 import flask
 from robostat.web.app import create_app
+from robostat.fantsu import Fantsu
 
 app = create_app(
         import_name=__name__,
@@ -12,6 +13,12 @@ app.register_blueprint(flask.Blueprint("public", __name__,
     static_folder="../public",
     static_url_path=""
 ))
+
+Fantsu(app, app.config["FANTSU_HOST"], app.config["FANTSU_PORT"])
+
+@app.template_global()
+def should_send_scores(judging):
+    return judging.event.arena == "XSumo1"
 
 if app.debug:
     logging.basicConfig(format="%(asctime)s %(levelname)s %(name)s %(message)s", level=logging.DEBUG)
