@@ -1,6 +1,6 @@
 A0	XSumo1
 J0	Sumotuomari A
-T0	banaani monsterit 
+T0	banaani monsterit
 T1	TevaRobots
 T2	EMT
 T3	UL
