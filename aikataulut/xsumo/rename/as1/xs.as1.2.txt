@@ -1,0 +1,13 @@
+A0	XSumo2
+J0	Sumotuomari B
+T0	Friisilän sumoilijat
+T1	Myräkkä
+T2	Karhut
+T3	SMM-team
+T4	Akenosa
+T5	FightRobots
+T6	TEAM JORIROBOTS
+T7	My little Pony
+T8	Hulivilit
+T9	The Dark Sumo
+T10	Sid

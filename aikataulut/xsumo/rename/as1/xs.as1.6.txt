@@ -1,0 +1,13 @@
+A0	XSumo6
+J0	Sumotuomari F
+T0	Sumorektaajat
+T1	Super Tankki 2.0
+T2	Kiinnitätkö jatkossa huomiota...
+T3	Viis-Aat
+T4	Tuho15
+T5	Team #pushoutofthearena
+T6	Savello
+T7	Perunat
+T8	5D-1
+T9	Makaronilaatikko
+T10	El Toro Jr.

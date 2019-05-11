@@ -1,0 +1,13 @@
+A0	XSumo8
+J0	Sumotuomari H
+T0	Pursuit
+T1	Mörkö
+T2	Queens
+T3	jonne 52
+T4	Jytevä Jyrki
+T5	FE-ROBOTS
+T6	Pinkie Pie
+T7	S.UDET
+T8	Proäijät
+T9	comets
+T10	I Want To Be Ninja

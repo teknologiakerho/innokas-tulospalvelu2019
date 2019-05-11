@@ -1,0 +1,14 @@
+A0	XSumo1
+J0	Sumotuomari A
+T0	banaani monsterit 
+T1	TevaRobots
+T2	EMT
+T3	UL
+T4	teamMYRSKY
+T5	R2D2
+T6	Klåpare
+T7	Röpöpojat
+T8	Smurffilimu
+T9	kakkuaivot
+T10	Galaxybot
+T11	The Storm

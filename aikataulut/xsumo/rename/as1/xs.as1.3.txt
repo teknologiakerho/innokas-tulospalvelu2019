@@ -1,0 +1,13 @@
+A0	XSumo3
+J0	Sumotuomari C
+T0	Mänärimehu
+T1	Maitopurkki
+T2	Tahma-Ahmat
+T3	Pekka 2.0
+T4	Seppo
+T5	Möfö-Jonnet
+T6	WAW ROBB
+T7	KFC
+T8	South Side Serpents
+T9	TUHOpossut
+T10	Froggy

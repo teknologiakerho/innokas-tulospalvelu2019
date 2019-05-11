@@ -1,0 +1,13 @@
+A0	XSumo4
+J0	Sumotuomari D
+T0	Niipperi Pluto
+T1	KEK.
+T2	Kaksoispiste D
+T3	Teletubbi
+T4	Siun isäs
+T5	T.E.E.N.Robots
+T6	Xtra-cola
+T7	VVE- yksisarviset
+T8	Kriisipuuro
+T9	Hupputiimi
+T10	Team Kössi

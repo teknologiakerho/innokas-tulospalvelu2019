@@ -1,0 +1,13 @@
+A0	XSumo7
+J0	Sumotuomari G
+T0	Martti X
+T1	Kiitäjät
+T2	Kouvostoliitto
+T3	Gameboy
+T4	Dankit Tankit
+T5	Team Noob
+T6	Muhkeat Siilit
+T7	Robo-corn
+T8	HalTi
+T9	marshmallows
+T10	Grey Bull

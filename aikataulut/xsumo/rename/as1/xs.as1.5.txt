@@ -1,0 +1,13 @@
+A0	XSumo5
+J0	Sumotuomari E
+T0	Hännäkäs-ruukku
+T1	Roskamestarit
+T2	Dingding
+T3	XXXTEHO
+T4	Susilääni
+T5	Wololo
+T6	Sumogang
+T7	Muumilimu
+T8	6D-1
+T9	Glitter Unicorns
+T10	ISV-ANNEBOT
