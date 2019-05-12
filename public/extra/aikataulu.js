@@ -26,7 +26,7 @@ live.config({
 live.carousel([
 
 	live.page("#page-timetable", {
-		timeout: 60 * 1000,
+		timeout: 120 * 1000,
 		components: [
 			live("timetable", "#timetable", {
 				interval: 10000,
