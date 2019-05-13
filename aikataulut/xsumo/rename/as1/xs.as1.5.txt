@@ -7,7 +7,7 @@ T3	XXXTEHO
 T4	Susilääni
 T5	Wololo
 T6	Sumogang
-T7	Muumilimu
+T7	Mänärilimu
 T8	6D-1
 T9	Glitter Unicorns
 T10	ISV-ANNEBOT

@@ -18,7 +18,7 @@ clean:
 	$(RM) $(AS1) $(AS2) $(SS) $(JS)
 
 tsv/as1/xs.as1.1.tsv: template/12_1.tsv
-tsv/as1/xs.as1.2.tsv: template/12_1.tsv
+tsv/as1/xs.as1.2.tsv: template/11_1.tsv
 tsv/as1/xs.as1.3.tsv: template/11_1.tsv
 tsv/as1/xs.as1.4.tsv: template/11_1.tsv
 tsv/as1/xs.as1.5.tsv: template/11_1.tsv
